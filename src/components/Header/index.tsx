@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import styles from './styles.module.scss'
+import { SignInButton } from '../SignInButton';
 
 export const Header = () => {
   return (
@@ -12,6 +13,8 @@ export const Header = () => {
           <a className={styles.active} href="">Home</a>
           <a href="">Posts</a>
         </nav>
+        
+        <SignInButton />
       </div>
     </header>
   );
